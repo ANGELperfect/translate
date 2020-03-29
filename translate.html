@@ -1,0 +1,57 @@
+<head>
+	<meta charset="utf-8">
+	<style>
+  *{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	text-align: center;
+	font-size: xx-large;
+	font-family: cursive;
+	background-color: lightblue;
+	cursor: pointer;
+}
+
+span.ar:after{
+	content: ' |';
+
+}
+
+body{
+	background-image: url("party.jpg");
+	background-attachment: fixed;
+	background-size:cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.text{
+	text-align: center;
+	font-size: 10em;
+	margin-top: 20%;
+}
+  </style>
+	<title>translate</title>
+</head>
+
+<body>
+	<h2>
+		<span onclick="ar();" class="ar" id="ar">arabic</span> 
+		<span onclick="en();" class="en" id="en">english</span>
+	</h2>
+	<div class="text" id="text">
+		Hello
+    	<script>
+      function ar() {
+	var $ar = document.getElementById("text").innerHTML="مرحبا";
+}
+
+function en(){
+	var $en = document.getElementById("text").innerHTML="Hello";
+}
+  </script>
+	</div>
+	
+</body>
